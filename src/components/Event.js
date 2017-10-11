@@ -8,12 +8,12 @@ class Event extends React.Component {
 
   handleDragStart(e) {
     e.dataTransfer.setData('text/plain', null);
-    e.target.style.opacity = '0.5';
+    e.target.classList.add('drag');
     this.props.sendData(e.target);
   }
 
   handleDragEnd(e) {
-    e.target.style.opacity = '';
+    e.target.classList.remove('drag');
   }
 
   render() {
