@@ -21,10 +21,7 @@ body {
       font-size: 13px; } }
 
 body {
-  background: #E5E2DE url(../../images/background.png) 0 0 no-repeat; }
-
-.event.q4.past {
-  top: 0px; }
+  background: #E5E2DE url("../../images/background.png") 0 0 no-repeat; }
 
 [draggable] {
   -moz-user-select: none;
@@ -64,7 +61,7 @@ body {
     left: 21px;
     width: 65px;
     height: 17px;
-    background: url(../../images/actual_hour.png) 0 0 no-repeat;
+    background: url("../../images/actual_hour.png") 0 0 no-repeat;
     color: white;
     font-size: 14px;
     text-align: center; }
@@ -101,7 +98,7 @@ body {
       right: 6px;
       width: 28px;
       height: 22px;
-      background: url(../../images/month.png) 0 0 no-repeat;
+      background: url("../../images/month.png") 0 0 no-repeat;
       cursor: pointer; }
     #terminplaner .header .slider {
       position: absolute;
@@ -109,23 +106,13 @@ body {
       right: 6px;
       width: 7px;
       height: 7px;
-      background: url(../../images/slider.png) 0 0 no-repeat;
+      background: url("../../images/slider.png") 0 0 no-repeat;
       cursor: pointer; }
   #terminplaner .table {
     width: 781px;
     height: 714px;
     overflow: scroll;
     position: relative; }
-    #terminplaner .table .events {
-      position: absolute;
-      top: 34px;
-      left: 108px;
-      width: 749px; }
-      #terminplaner .table .events .day {
-        float: left;
-        margin-right: 1px;
-        width: 106px;
-        height: 1716px; }
     #terminplaner .table .event {
       width: 107px;
       border: 1px solid white;
@@ -163,7 +150,7 @@ body {
         bottom: 4px;
         opacity: 0.7;
         cursor: pointer;
-        background-image: url(../../images/icons-sprite.png);
+        background-image: url("../../images/icons-sprite.png");
         background-repeat: no-repeat;
         width: 18px;
         height: 13px; }

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import TBody from './TBody';
 import THead from './THead';
 
@@ -11,7 +12,7 @@ class Table extends React.Component {
 
           <THead/>
           <TBody/>
-          
+
         </table>
       </div>
     )
