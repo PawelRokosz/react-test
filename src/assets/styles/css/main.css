@@ -11,24 +11,6 @@ a {
   text-decoration: none;
   color: inherit; }
 
-body {
-  background: #E5E2DE url("../../images/background.png") 0 0 no-repeat;
-  font-size: 16px; }
-  @media only screen and (max-width: 1024px) {
-    body {
-      font-size: 15px; } }
-  @media only screen and (max-width: 800px) {
-    body {
-      font-size: 13px; } }
-
-[draggable] {
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  -khtml-user-drag: element;
-  -webkit-user-drag: element; }
-
 @font-face {
   font-family: 'unit-thin';
   src: url("../../fonts/unit-thin.eot");
@@ -43,6 +25,29 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background: #E5E2DE url("../../images/background.png") 0 0 no-repeat;
+  font-size: 16px; }
+  @media only screen and (max-width: 1024px) {
+    body {
+      font-size: 15px; } }
+  @media only screen and (max-width: 800px) {
+    body {
+      font-size: 13px; } }
+
+h2 {
+  font-family: 'unit-thin';
+  margin: 8px 11px 10px;
+  letter-spacing: 0.3px; }
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -khtml-user-drag: element;
+  -webkit-user-drag: element; }
+
 #terminplaner {
   position: relative;
   top: 92px;
@@ -53,15 +58,9 @@ body {
   font-family: 'unit-light';
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4);
   overflow: hidden; }
-  #terminplaner * {
-    box-sizing: border-box; }
   #terminplaner .header {
     position: relative;
     border-bottom: 1px solid #ebebeb; }
-    #terminplaner .header h2 {
-      font-family: 'unit-thin';
-      margin: 8px 11px 10px;
-      letter-spacing: 0.3px; }
     #terminplaner .header .control {
       text-align: center;
       margin-bottom: 6px;
@@ -90,51 +89,6 @@ body {
     height: 714px;
     overflow: scroll;
     position: relative; }
-    #terminplaner .table .event {
-      width: 107px;
-      border: 1px solid white;
-      font-size: 0.75em;
-      cursor: move; }
-      #terminplaner .table .event.drag {
-        opacity: 0.5; }
-      #terminplaner .table .event.q1 {
-        height: 33px; }
-      #terminplaner .table .event.q2 {
-        height: 66px; }
-      #terminplaner .table .event.q3 {
-        height: 99px; }
-      #terminplaner .table .event.q4 {
-        height: 132px; }
-      #terminplaner .table .event.past {
-        background: #d6ecff; }
-        #terminplaner .table .event.past .icon {
-          background-position: 0 -13px; }
-      #terminplaner .table .event.present {
-        background: #fdd466; }
-        #terminplaner .table .event.present .icon {
-          background-position: 0 0; }
-      #terminplaner .table .event.future {
-        background: #93d7fb; }
-        #terminplaner .table .event.future .icon {
-          background-position: 0 13px; }
-      #terminplaner .table .event.empty {
-        background: none;
-        border: 0; }
-      #terminplaner .table .event .hours, #terminplaner .table .event .description {
-        margin: 1px 0 0 1px; }
-      #terminplaner .table .event .icon {
-        position: absolute;
-        display: block;
-        right: 3px;
-        bottom: 4px;
-        opacity: 0.7;
-        cursor: pointer;
-        background-image: url("../../images/icons-sprite.png");
-        background-repeat: no-repeat;
-        width: 18px;
-        height: 13px; }
-        #terminplaner .table .event .icon:hover {
-          background-position: 0 -26px; }
   #terminplaner table thead tr {
     height: 33px; }
   #terminplaner table thead td {
@@ -167,3 +121,49 @@ body {
 
 .over {
   background: rgba(253, 212, 102, 0.5) !important; }
+
+.event {
+  width: 107px;
+  border: 1px solid white;
+  font-size: 0.75em;
+  cursor: move; }
+  .event.drag {
+    opacity: 0.5; }
+  .event.q1 {
+    height: 33px; }
+  .event.q2 {
+    height: 66px; }
+  .event.q3 {
+    height: 99px; }
+  .event.q4 {
+    height: 132px; }
+  .event.past {
+    background: #d6ecff; }
+    .event.past .icon {
+      background-position: 0 -13px; }
+  .event.present {
+    background: #fdd466; }
+    .event.present .icon {
+      background-position: 0 0; }
+  .event.future {
+    background: #93d7fb; }
+    .event.future .icon {
+      background-position: 0 13px; }
+  .event.empty {
+    background: none;
+    border: 0; }
+  .event .hours, .event .description {
+    margin: 1px 0 0 1px; }
+  .event .icon {
+    position: absolute;
+    display: block;
+    right: 3px;
+    bottom: 4px;
+    opacity: 0.7;
+    cursor: pointer;
+    background-image: url("../../images/icons-sprite.png");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 13px; }
+    .event .icon:hover {
+      background-position: 0 -26px; }

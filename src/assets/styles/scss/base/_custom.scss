@@ -1,24 +1,3 @@
-// #timer {
-// 	position: absolute;
-// 	top: 0;
-// 	margin-top: 33px;
-// 	width: 856px;
-// 	height: 1px;
-// 	background: #e86735;
-// 	z-index: 10;
-// 	transition: top 0.3s;
-// 	span {
-// 		display: block;
-// 		position: relative;
-// 		top: -8px; left: 21px;
-// 		width: 65px; height: 17px;
-// 		background: url('../../images/actual_hour.png') 0 0 no-repeat;
-// 		color: white;
-// 		font-size: 14px;
-// 		text-align: center;
-// 	}
-// }
-
 #terminplaner {
 	position: relative;
 	top: 92px; left: 340px;
@@ -27,15 +6,9 @@
 	font-family: 'unit-light';
 	box-shadow: 0 1px 1px 0 rgba(black, 0.4);
 	overflow: hidden;
-	* { box-sizing: border-box; }
 	.header {
 		position: relative;
 		border-bottom: 1px solid #ebebeb;
-		h2 {
-			font-family: 'unit-thin';
-			margin: 8px 11px 10px;
-    		letter-spacing: 0.3px;;
-		}
 		.control {
 			text-align: center;
 			margin-bottom: 6px;
@@ -64,57 +37,6 @@
 		width: 781px; height: 714px;
 		overflow: scroll;
 		position: relative;
-		.event {
-			width: 107px;
-			border: 1px solid white;
-			font-size: 0.75em;
-			cursor: move;
-			&.drag {
-				opacity: 0.5;
-			}
-			&.q1 { height: 33px; }
-			&.q2 { height: 66px; }
-			&.q3 { height: 99px; }
-			&.q4 { height: 132px; }
-			&.past {
-				background: #d6ecff;
-				.icon {
-					background-position: 0 -13px;
-				}
-			}
-			&.present {
-				background: #fdd466;
-				.icon {
-					background-position: 0 0;
-				}
-			}
-			&.future {
-				background: #93d7fb;
-				.icon {
-					background-position: 0 13px;
-				}
-			}
-			&.empty {
-				background: none;
-				border: 0;
-			}
-			.hours, .description {
-				margin: 1px 0 0 1px;
-			}
-			.icon {
-				position: absolute;
-				display: block;
-				right: 3px; bottom: 4px;
-				opacity: 0.7;
-				cursor: pointer;
-				background-image: url('../../images/icons-sprite.png');
-				background-repeat: no-repeat;
-				width: 18px; height: 13px;
-				&:hover {
-					background-position: 0 -26px;
-				}
-			}
-		}
 	}
 	table {
 		thead {
