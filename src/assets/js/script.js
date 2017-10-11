@@ -1,8 +1,9 @@
 var cells = document.querySelectorAll(' div');
 
-function handleDragStart(e) {
-  this.style.opacity = '0.4';  // this / e.target is the source node.
-}
+// function handleDragStart(e) {
+//   // console.log('asdfasdf');
+//   this.style.opacity = '0.4';  // this / e.target is the source node.
+// }
 
 function handleDragOver(e) {
   if (e.preventDefault) {

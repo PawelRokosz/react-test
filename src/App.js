@@ -1,10 +1,14 @@
 import React from 'react';
 import './assets/styles/css/main.css';
-import './assets/js/script.js';
+// import './assets/js/script.js';
 
 import Event from './components/Event';
+import Table from './components/Table';
 
 class App extends React.Component {
+  handleClick() {
+    console.log('asdfasdfasdf');
+  }
 
   render() {
     return (
@@ -26,10 +30,11 @@ class App extends React.Component {
     				<div className="events">
 
     					<div className="day" data-day="1">
-                <Event/>
+                <Event onClick={() => this.handleClick()}/>
     					</div>
 
-    					<div className="day" data-day="2"></div>
+    					<div className="day" data-day="2">
+    					</div>
     					<div className="day" data-day="3"></div>
     					<div className="day" data-day="4"></div>
     					<div className="day" data-day="5"></div>
@@ -37,155 +42,7 @@ class App extends React.Component {
     					<div className="day" data-day="7"></div>
     				</div>
 
-    				<table>
-
-    					<thead>
-    						<tr>
-    							<td>Uhrzeit</td>
-    							<td>Mo 06.07.</td>
-    							<td>Di 07.07.</td>
-    							<td className="active">Mi 08.07.</td>
-    							<td>Do 09.07.</td>
-    							<td>Fr 10.07.</td>
-    							<td className="free" >Sa 11.07.</td>
-    							<td className="free" >So 12.07.</td>
-    						</tr>
-    					</thead>
-
-    					<tbody>
-    						<tr>
-    							<td className="hour">08:00</td>
-    							<td >asdf</td>
-    							<td ></td>
-    							<td className="active"></td>
-    							<td ></td>
-    							<td ></td>
-    							<td ></td>
-    							<td ></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">09:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">10:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">11:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">12:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td></td>
-    							<td ></td>
-    							<td ></td>
-    							<td ></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">13:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td ></td>
-    							<td ></td>
-    							<td ></td>
-    							<td ></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">14:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">15:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">16:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">17:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">18:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">19:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    						</tr>
-    						<tr>
-    							<td className="hour">20:00</td>
-    							<td></td>
-    							<td></td>
-    							<td className="active"></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    							<td></td>
-    						</tr>
-    					</tbody>
-
-            </table>
+            <Table/>
 
     			</div>
     		</div>
