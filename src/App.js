@@ -55,7 +55,7 @@ class App extends React.Component {
     					<tbody>
     						<tr>
     							<td className="hour">08:00</td>
-    							<td ></td>
+    							<td >asdf</td>
     							<td ></td>
     							<td className="active"></td>
     							<td ></td>
