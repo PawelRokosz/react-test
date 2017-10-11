@@ -7,12 +7,14 @@ class Event extends React.Component {
   }
 
   handleDragStart(e) {
-    e.dataTransfer.setData('text/plain',null);
+    e.dataTransfer.setData('text/plain', null);
     e.target.style.opacity = '0.5';
+    this.props.sendData(e.target);
   }
 
   handleDragEnd(e) {
     e.target.style.opacity = '';
+    this.props.eventDragEnd(e);
   }
 
   render() {
@@ -22,7 +24,6 @@ class Event extends React.Component {
         onDrag={() => this.handleDrag()}
         onDragStart={(e) => this.handleDragStart(e)}
         onDragEnd={(e) => this.handleDragEnd(e)}
-        onDragOver={(e) => this.handleDragOver(e)} 
         >
         <p className="hours">08:00 - 09:00</p>
         <p className="description">{`${myData.patient.salutation} ${myData.patient.firstname}`}</p>

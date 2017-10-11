@@ -131,7 +131,6 @@ body {
         width: 106px;
         height: 1716px; }
     #terminplaner .table .event {
-      position: absolute;
       width: 107px;
       border: 1px solid white;
       font-size: 0.75em;

@@ -1,8 +1,7 @@
 import React from 'react';
+import TBody from './TBody';
 
 class Table extends React.Component {
-
-  
 
   render() {
     return (
@@ -21,138 +20,7 @@ class Table extends React.Component {
           </tr>
         </thead>
 
-        <tbody>
-          <tr>
-            <td className="hour">08:00</td>
-            <td ></td>
-            <td>qewrqwer</td>
-            <td className="active"></td>
-            <td ></td>
-            <td ></td>
-            <td ></td>
-            <td ></td>
-          </tr>
-          <tr>
-            <td className="hour">09:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td className="hour">10:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td className="hour">11:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td className="hour">12:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td></td>
-            <td ></td>
-            <td ></td>
-            <td ></td>
-          </tr>
-          <tr>
-            <td className="hour">13:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td ></td>
-            <td ></td>
-            <td ></td>
-            <td ></td>
-          </tr>
-          <tr>
-            <td className="hour">14:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td className="hour">15:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td className="hour">16:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td className="hour">17:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td className="hour">18:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td className="hour">19:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td className="hour">20:00</td>
-            <td></td>
-            <td></td>
-            <td className="active"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
+        <TBody/>
 
       </table>
     )
