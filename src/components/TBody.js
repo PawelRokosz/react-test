@@ -12,13 +12,13 @@ class TBody extends React.Component {
 
   handleDragEnter(e) {
     if (e.target.tagName === 'TD' && e.target.innerHTML === '') {
-      e.target.style.background = "purple";
+      e.target.classList.add('over');
     }
   }
 
   handleDragLeave(e) {
     if (e.target.tagName === 'TD' && e.target.innerHTML === '') {
-      e.target.style.background = "";
+      e.target.classList.remove('over');
     }
   }
 
@@ -34,15 +34,11 @@ class TBody extends React.Component {
   }
 
   handleDrop(e) {
-    console.log(e.target);
-    console.log(this.state.data);
-    e.target.appendChild(this.state.data);
+    if (e.target.tagName === 'TD' && e.target.innerHTML === '') {
+      e.target.appendChild(this.state.data);
+      e.target.classList.remove('over');
+    }
   }
-
-  handleEventDragEnd(e) {
-    console.log(e);
-  }
-
 
   render() {
 
@@ -56,7 +52,7 @@ class TBody extends React.Component {
         <tr>
           <td className="hour">08:00</td>
           <td >
-            <Event eventDragEnd={(e) => this.handleEventDragEnd(e)} sendData={(data) => this.handleSendData(data)}/>
+            <Event sendData={(data) => this.handleSendData(data)}/>
           </td>
           <td></td>
           <td className="active"></td>

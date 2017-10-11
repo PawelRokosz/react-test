@@ -13,9 +13,6 @@ body {
 	user-select: none;
 	-khtml-user-drag: element;
 	-webkit-user-drag: element;
-},
-.over {
-	border: 2px dashed #000;
 }
 
 @font-face {
@@ -174,6 +171,7 @@ body {
 				line-height: 33px;
 				border-top: 0;
 				&.active { background: #f2f2f2 }
+				&.over
 				&.free {
 					color: rgba(black, 0.5);
 				}
@@ -205,4 +203,8 @@ body {
 			font-size: 0.9em;
 		}
 	}
+}
+
+.over {
+	background: rgba(#fdd466, 0.5) !important;
 }

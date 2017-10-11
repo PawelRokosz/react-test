@@ -14,7 +14,6 @@ class Event extends React.Component {
 
   handleDragEnd(e) {
     e.target.style.opacity = '';
-    this.props.eventDragEnd(e);
   }
 
   render() {

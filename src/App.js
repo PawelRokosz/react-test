@@ -21,9 +21,8 @@ class App extends React.Component {
     				<span className="slider"></span>
     			</div>
 
-    			<div className="table">
-            <Table/>
-    			</div>
+          <Table/>
+
     		</div>
       </div>
     );

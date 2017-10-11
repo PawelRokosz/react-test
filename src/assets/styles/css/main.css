@@ -34,10 +34,6 @@ body {
   -khtml-user-drag: element;
   -webkit-user-drag: element; }
 
-
-.over {
-  border: 2px dashed #000; }
-
 @font-face {
   font-family: 'unit-thin';
   src: url("../../fonts/unit-thin.eot");
@@ -181,7 +177,7 @@ body {
     border-top: 0; }
     #terminplaner table thead td.active {
       background: #f2f2f2; }
-    #terminplaner table thead td.free {
+    #terminplaner table thead td.over #terminplaner table thead td.free {
       color: rgba(0, 0, 0, 0.5); }
   #terminplaner table tbody tr {
     height: 132px; }
@@ -202,3 +198,6 @@ body {
       border-left: 0; }
   #terminplaner table .hour {
     font-size: 0.9em; }
+
+.over {
+  background: rgba(253, 212, 102, 0.5) !important; }
