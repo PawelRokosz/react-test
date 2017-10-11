@@ -3,20 +3,15 @@ import React from 'react';
 import TBody from './TBody';
 import THead from './THead';
 
-class Table extends React.Component {
+const Table = (props) => (
+  <div className="table">
+    <table>
 
-  render() {
-    return (
-      <div className="table">
-        <table>
+      <THead/>
+      <TBody/>
 
-          <THead/>
-          <TBody/>
-
-        </table>
-      </div>
-    )
-  }
-}
+    </table>
+  </div>
+);
 
 export default Table;

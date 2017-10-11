@@ -1,14 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import Event from './Event';
 
-class TBody extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      data: ''
-    }
-  }
+class TBody extends Component {
+
+  state = { data: '' }
 
   handleDragEnter(e) {
     if (e.target.tagName === 'TD' && e.target.innerHTML === '') {
@@ -28,9 +24,7 @@ class TBody extends React.Component {
   }
 
   handleSendData(data) {
-    this.setState({
-      data: data
-    })
+    this.setState({ data })
   }
 
   handleDrop(e) {
@@ -41,7 +35,6 @@ class TBody extends React.Component {
   }
 
   render() {
-
     return (
       <tbody
         onDragEnter={(e) => this.handleDragEnter(e)}

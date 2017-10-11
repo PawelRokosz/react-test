@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import data from './data/calendarData.json';
 
-class Event extends React.Component {
+class Event extends Component {
   handleDrag() {
     console.log('drag');
   }
@@ -18,6 +18,7 @@ class Event extends React.Component {
 
   render() {
     const myData = data[0];
+    
     return (
       <div id="event" className="event q4 past" draggable="true"
         onDrag={() => this.handleDrag()}

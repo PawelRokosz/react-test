@@ -3,6 +3,7 @@
 // *********************************
 
 body {
+  background: #E5E2DE url('../../images/background.png') 0 0 no-repeat;
   font-size: 16px;
 
   @include respond-at-width(1024px){
@@ -13,3 +14,32 @@ body {
     font-size: 13px;
   }
 }
+
+[draggable] {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-khtml-user-drag: element;
+	-webkit-user-drag: element;
+}
+
+@font-face {
+	font-family: 'unit-thin';
+	src: url('../../fonts/unit-thin.eot');
+	src: url('../../fonts/unit-thin.eot?#iefix') format('embedded-opentype'),
+		 url('../../fonts/unit-thin.woff') format('woff'),
+		 url('../../fonts/unit-thin.ttf') format('truetype'),
+		 url('../../fonts/unit-thin.svg#unit-thin') format('svg');
+	font-weight: normal;
+	font-style: normal; }
+
+@font-face {
+	font-family: 'unit-light';
+	src: url('../../fonts/unit-light.eot');
+	src: url('../../fonts/unit-light.eot?#iefix') format('embedded-opentype'),
+		 url('../../fonts/unit-light.woff') format('woff'),
+		 url('../../fonts/unit-light.ttf') format('truetype'),
+		 url('../../fonts/unit-light.svg#unit-light') format('svg');
+	font-weight: normal;
+	font-style: normal; }
