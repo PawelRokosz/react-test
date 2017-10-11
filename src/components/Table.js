@@ -1,6 +1,9 @@
 import React from 'react';
 
 class Table extends React.Component {
+
+  
+
   render() {
     return (
       <table>
@@ -22,7 +25,7 @@ class Table extends React.Component {
           <tr>
             <td className="hour">08:00</td>
             <td ></td>
-            <td ></td>
+            <td>qewrqwer</td>
             <td className="active"></td>
             <td ></td>
             <td ></td>

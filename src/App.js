@@ -6,9 +6,6 @@ import Event from './components/Event';
 import Table from './components/Table';
 
 class App extends React.Component {
-  handleClick() {
-    console.log('asdfasdfasdf');
-  }
 
   render() {
     return (
@@ -30,7 +27,7 @@ class App extends React.Component {
     				<div className="events">
 
     					<div className="day" data-day="1">
-                <Event onClick={() => this.handleClick()}/>
+                <Event/>
     					</div>
 
     					<div className="day" data-day="2">
