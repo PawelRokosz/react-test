@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import data from './data/calendarData.json';
 
 class Event extends Component {
   handleDrag() {
@@ -17,8 +16,6 @@ class Event extends Component {
   }
 
   render() {
-    const myData = data[0];
-    
     return (
       <div id="event" className="event q4 past" draggable="true"
         onDrag={() => this.handleDrag()}
@@ -26,7 +23,7 @@ class Event extends Component {
         onDragEnd={(e) => this.handleDragEnd(e)}
         >
         <p className="hours">08:00 - 09:00</p>
-        <p className="description">{`${myData.patient.salutation} ${myData.patient.firstname}`}</p>
+        <p className="description">{this.props.description}</p>
         <span className="icon"></span>
       </div>
     )
