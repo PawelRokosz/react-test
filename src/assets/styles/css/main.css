@@ -123,6 +123,7 @@ h2 {
   background: rgba(253, 212, 102, 0.5) !important; }
 
 .event {
+  position: relative;
   width: 107px;
   border: 1px solid white;
   font-size: 0.75em;

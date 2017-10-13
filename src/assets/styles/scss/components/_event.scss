@@ -1,4 +1,5 @@
 .event {
+  position: relative;
   width: 107px;
   border: 1px solid white;
   font-size: 0.75em;
@@ -55,7 +56,7 @@
     background-image: url('../../images/icons-sprite.png');
     background-repeat: no-repeat;
     width: 18px; height: 13px;
-    
+
     &:hover {
       background-position: 0 -26px;
     }
