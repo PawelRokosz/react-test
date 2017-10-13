@@ -19,7 +19,7 @@
     "start_time": "09:00",
     "end_time": "10:00",
     "start_hour": 0,
-    "day_number": 1
+    "day": "06"
   },
 
   {
@@ -42,6 +42,29 @@
     "start_time": "11:00",
     "end_time": "12:00",
     "start_hour": 0,
-    "day_number": 1
+    "day": "07"
+  },
+
+  {
+    "id": 2,
+    "doctor": {
+      "account_id": 7,
+      "id": 2,
+      "title": "Blue Walker"
+    },
+    "patient": {
+      "id": 3,
+      "salutation": "Mrs.",
+      "firstname": "Anna",
+      "lastname": "A.",
+      "gender": 0,
+      "notify_email": false,
+      "notify_sms": false,
+      "language": "de"
+    },
+    "start_time": "18:00",
+    "end_time": "12:00",
+    "start_hour": 0,
+    "day": "09"
   }
 ]

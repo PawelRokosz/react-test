@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 
-import calendarData from './data/calendarData.json';
-
 import CustomRow from './CustomRow';
-import Event from './Event';
 
 class TBody extends Component {
 
   state = {
-    data: '',
-    events: []
+    data: ''
   }
 
   handleDragEnter(e) {
@@ -40,44 +36,12 @@ class TBody extends Component {
     }
   }
 
-  componentWillMount() {
-    this.setState({
-      events: calendarData
-    })
-  }
-
   render() {
-    let events = this.state.events;
 
-    let mappedEvents = events.map((event) => {
-      return <Event
-              key={event.id}
-              description={`${event.patient.salutation} ${event.patient.firstname}`}
-              start={event.start_time}
-              end={event.end_time}
-              sendData={(data) => this.handleSendData(data)}
-              />
+    let hours = ['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'];
+    let customRows = hours.map(x => {
+      return <CustomRow key={x} hour={x} sendData={(data) => this.handleSendData(data)}/>
     })
-
-    const workingHoursDuringDay = 13;
-    let customRows = [];
-
-    let hour = 8;
-    let timeFromHour;
-    let eventForRow;
-
-    for (var i = 0; i < workingHoursDuringDay; i++) {
-
-      if (hour > 9) {
-        timeFromHour = `${hour}:00`;
-      } else {
-        timeFromHour = `0${hour}:00`;
-      }
-
-      customRows.push(<CustomRow key={i} hour={timeFromHour} event={mappedEvents[i]}/>);
-
-      hour++;
-    }
 
     return (
       <tbody
