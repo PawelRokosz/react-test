@@ -16,8 +16,8 @@
       "notify_sms": false,
       "language": "de"
     },
-    "start_time": "2015-11-11 09:00:00",
-    "end_time": "2015-11-11 10:00:00",
+    "start_time": "09:00",
+    "end_time": "10:00",
     "start_hour": 0,
     "day_number": 1
   },
@@ -39,8 +39,8 @@
       "notify_sms": false,
       "language": "de"
     },
-    "start_time": "2015-11-11 09:00:00",
-    "end_time": "2015-11-11 10:00:00",
+    "start_time": "11:00",
+    "end_time": "12:00",
     "start_hour": 0,
     "day_number": 1
   }

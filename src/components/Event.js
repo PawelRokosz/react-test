@@ -22,7 +22,7 @@ class Event extends Component {
         onDragStart={(e) => this.handleDragStart(e)}
         onDragEnd={(e) => this.handleDragEnd(e)}
         >
-        <p className="hours">08:00 - 09:00</p>
+        <p className="hours">{this.props.start} - {this.props.end}</p>
         <p className="description">{this.props.description}</p>
         <span className="icon"></span>
       </div>

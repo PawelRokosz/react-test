@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class CustomRow extends Component {
   render() {
-
+    console.log(this.props.event);
     return (
       <tr>
         <td className="hour">{this.props.hour}</td>

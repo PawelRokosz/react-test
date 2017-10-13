@@ -49,15 +49,22 @@ class TBody extends Component {
   render() {
     let events = this.state.events;
 
-    let mappedEvents = events.map(event => {
-      return <Event key={event.id} description={`${event.patient.salutation} ${event.patient.firstname}`} sendData={(data) => this.handleSendData(data)}/>
-    });
+    let mappedEvents = events.map((event) => {
+      return <Event
+              key={event.id}
+              description={`${event.patient.salutation} ${event.patient.firstname}`}
+              start={event.start_time}
+              end={event.end_time}
+              sendData={(data) => this.handleSendData(data)}
+              />
+    })
 
     const workingHoursDuringDay = 13;
     let customRows = [];
 
     let hour = 8;
     let timeFromHour;
+    let eventForRow;
 
     for (var i = 0; i < workingHoursDuringDay; i++) {
 
@@ -88,137 +95,3 @@ class TBody extends Component {
 }
 
 export default TBody;
-
-// <tr>
-//   <td className="hour">08:00</td>
-//   <td >
-//     <Event sendData={(data) => this.handleSendData(data)}/>
-//   </td>
-//   <td>
-//   </td>
-//   <td className="active"></td>
-//   <td ></td>
-//   <td ></td>
-//   <td ></td>
-//   <td ></td>
-// </tr>
-// <tr>
-//   <td className="hour">09:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td className="hour">10:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td className="hour">11:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td className="hour">12:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td></td>
-//   <td ></td>
-//   <td ></td>
-//   <td ></td>
-// </tr>
-// <tr>
-//   <td className="hour">13:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td ></td>
-//   <td ></td>
-//   <td ></td>
-//   <td ></td>
-// </tr>
-// <tr>
-//   <td className="hour">14:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td className="hour">15:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td className="hour">16:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td className="hour">17:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td className="hour">18:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td className="hour">19:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-// </tr>
-// <tr>
-//   <td className="hour">20:00</td>
-//   <td></td>
-//   <td></td>
-//   <td className="active"></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-//   <td></td>
-// </tr>
